@@ -92,6 +92,7 @@ body {
   color:#624f63;
   text-align:center;
   padding-top:120px;
+
 }
 
 ul {
@@ -112,6 +113,7 @@ a {
   padding:.3em .6em;
   margin:.3em;
   display: inline-block;
+  font-family: monospace;
 }
 
 .flip-phone {
