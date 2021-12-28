@@ -94,7 +94,7 @@ body {
   padding-top:120px;
 }
 
-u {
+ul {
  margin:none;
   padding:none;
 }
@@ -103,10 +103,15 @@ li {
   padding:none;
    margin:none;
   list-style: none;
+  display:block;
 }
 
 a {
-  color:#624f63;
+  background:#624f63;
+  color:#ffffff;
+  padding:.3em .6em;
+  margin:.3em;
+  display: inline-block;
 }
 
 .flip-phone {
@@ -114,8 +119,9 @@ a {
   height:50px;
   transform-style: preserve-3d;
   position:absolute;
+  transform-origin:12px 0px;
   left:50%;
-  top:50px;
+  top:80px;
   animation: phone-main-rotate 5s both infinite linear;
 }
 
