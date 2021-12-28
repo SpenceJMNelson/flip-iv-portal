@@ -94,6 +94,7 @@ width:100%;
 
 body {
   background: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
+  background-attachment: fixed;
   color:#624f63;
   text-align:center;
   padding-top:120px;
