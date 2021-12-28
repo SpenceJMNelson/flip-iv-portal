@@ -87,6 +87,115 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  background:#9aad99;
+  color:#624f63;
+  text-align:center;
+  padding-top:120px;
+}
+
+u {
+ margin:none;
+  padding:none;
+}
+
+li {
+  padding:none;
+   margin:none;
+  list-style: none;
+}
+
+a {
+  color:#624f63;
+}
+
+.flip-phone {
+  width:50px;
+  height:50px;
+  transform-style: preserve-3d;
+  position:absolute;
+  left:50%;
+  top:50px;
+  animation: phone-main-rotate 5s both infinite linear;
+}
+
+.flip-phone-front {
+  transform-style: preserve-3d;
+  width:50%;
+  height:100%;
+  background:black;
+  transform-origin:0% 0%;
+  position:absolute;
+  top:0;
+  left:0;
+  animation: phone-open-front 5s both;
+  font-size:30px;
+  line-height:1px;
+}
+
+.flip-phone-front::after {
+  content:"";
+  right:2px;
+  left:2px;
+  height:50%;
+  display:block;
+  background:white;
+  transform: translateZ(-1px);
+  position: absolute;
+  top:10px;
+}
+
+.flip-phone-back {
+  transform-style: preserve-3d;
+  width:50%;
+  height:100%;
+  background:black;
+  transform-origin:0% 0%;
+  position:absolute;
+  top:0;
+  left:0;
+  animation: phone-open-back 5s both;
+  transform:rotateX(-40deg);
+  line-height:10px;
+}
+
+.flip-phone-back::after {
+  content:"• • • • • • • • •";
+  height:50%;
+  display:block;
+  transform: translateZ(1px);
+  position: absolute;
+  top:10px;
+  letter-spacing: -.07em;
+}
+
+@keyframes phone-main-rotate{
+  from {
+    transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(80deg) rotateY(0deg) rotateZ(360deg);
+  }
+}
+
+@keyframes phone-open-front{
+  from {
+    transform:rotateX(0deg);
+  }
+  to {
+    transform:rotateX(90deg);
+  }
+}
+
+@keyframes phone-open-back{
+  from {
+    transform:rotateX(0deg);
+  }
+  to {
+    transform:rotateX(-40deg);
+  }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +369,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
