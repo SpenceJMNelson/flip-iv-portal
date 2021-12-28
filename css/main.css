@@ -87,12 +87,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html{
+height:100%;
+width:100%;
+}
+
 body {
-  background:#9aad99;
+  background: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
   color:#624f63;
   text-align:center;
   padding-top:120px;
   font-family: sans-serif;
+  height:100%;
+  width:100%;
 
 }
 
@@ -106,8 +113,8 @@ li {
 }
 
 a {
-  background:#624f63;
-  color:#ffffff;
+  background:#ffffff;
+  color:#000000;
   padding:.3em .6em;
   margin:.3em;
   display: inline-block;
